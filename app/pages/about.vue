@@ -26,8 +26,8 @@
     <!-- Why Choose Us -->
     <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
       <div class="container mx-auto px-6 text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">لماذا تختار إنجاز CTC؟</h2>
-        <p class="text-slate-500 max-w-2xl mx-auto">نحن نؤمن بأن التدريب ليس مجرد نقل للمعلومات، بل هو رحلة تحول شاملة للفرد والمؤسسة.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">{{ t('about.whyTitle') }}</h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">{{ t('about.whyDesc') }}</p>
       </div>
 
       <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
@@ -35,24 +35,24 @@
           <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
             <AwardIcon class="w-8 h-8" />
           </div>
-          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">خبرة عالمية</h4>
-          <p class="text-slate-500 text-sm leading-relaxed">نقدم برامج تدريبية معتمدة دولياً تتماشى مع أرقى المعايير العالمية في الإدارة والتقنية.</p>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">{{ t('about.features.global') }}</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">{{ t('about.features.globalDesc') }}</p>
         </div>
 
         <div class="p-10 bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
           <div class="w-14 h-14 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center text-indigo-600 mb-6">
             <UsersIcon class="w-8 h-8" />
           </div>
-          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">نخبة الخبراء</h4>
-          <p class="text-slate-500 text-sm leading-relaxed">فريقنا يضم مستشارين ومدربين ذوي خبرة ميدانية واسعة في مختلف قطاعات الأعمال.</p>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">{{ t('about.features.experts') }}</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">{{ t('about.features.expertsDesc') }}</p>
         </div>
 
         <div class="p-10 bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
           <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center text-emerald-600 mb-6">
             <TrendingUpIcon class="w-8 h-8" />
           </div>
-          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">نتائج ملموسة</h4>
-          <p class="text-slate-500 text-sm leading-relaxed">نركز على التطبيق العملي لضمان تحقيق عائد حقيقي ومستدام على الاستثمار في التدريب.</p>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">{{ t('about.features.results') }}</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">{{ t('about.features.resultsDesc') }}</p>
         </div>
       </div>
     </section>

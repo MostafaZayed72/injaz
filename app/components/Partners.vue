@@ -3,7 +3,7 @@
     <div class="container mx-auto px-6">
       <div class="text-center mb-10">
         <p class="text-slate-400 dark:text-slate-500 font-medium tracking-widest uppercase text-xs">
-          Trusted by Industry Leaders
+          {{ t('partners.title') }}
         </p>
       </div>
       
@@ -27,7 +27,7 @@
           <div class="w-10 h-10 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-all">
             <CheckCircleIcon class="w-6 h-6" />
           </div>
-          <span class="text-slate-800 dark:text-slate-200 font-bold tracking-wider">ISO Certified</span>
+          <span class="text-slate-800 dark:text-slate-200 font-bold tracking-wider">{{ t('partners.iso') }}</span>
         </div>
         <!-- PMI -->
         <div class="flex items-center space-x-3 group">
@@ -48,4 +48,6 @@ import {
   CheckCircleIcon, 
   FileBadgeIcon 
 } from 'lucide-vue-next'
+
+const { t } = useI18n()
 </script>

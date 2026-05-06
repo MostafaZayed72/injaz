@@ -33,7 +33,17 @@
     "missionDesc": "Contributing leaders to be at the heart of future business realities.",
     "goal": "Our Goal",
     "goalDesc": "To achieve sustainable growth and become the market leader in training and consultancy.",
-    "yearsExp": "Years of Professional Excellence"
+    "yearsExp": "Years of Professional Excellence",
+    "whyTitle": "Why Choose Injaz CTC?",
+    "whyDesc": "We believe that training is not just information transfer, but a comprehensive transformation journey for individuals and organizations.",
+    "features": {
+      "global": "Global Expertise",
+      "globalDesc": "We offer internationally accredited training programs aligned with the highest global standards in management and technology.",
+      "experts": "Elite Experts",
+      "expertsDesc": "Our team includes consultants and trainers with extensive field experience across various business sectors.",
+      "results": "Tangible Results",
+      "resultsDesc": "We focus on practical application to ensure a real and sustainable return on your training investment."
+    }
   },
   "services": {
     "subtitle": "Our Expertise",
@@ -106,5 +116,9 @@
     "comments": "Comments / Message",
     "commentsPlaceholder": "How can we help you?",
     "submit": "Send Message Now"
+  },
+  "partners": {
+    "title": "Trusted by Industry Leaders",
+    "iso": "ISO Certified"
   }
 }
