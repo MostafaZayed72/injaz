@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "programs": "Programs",
+    "contact": "Contact",
+    "cta": "Get Started"
+  },
+  "hero": {
+    "title": "Start Today and Create",
+    "titleAccent": "a Difference Tomorrow",
+    "description": "Empowering organizations through world-class training, advanced technology solutions, and innovative internet services. Join Injaz to train and shape the future of professional excellence.",
+    "ctaPrimary": "Explore Programs",
+    "ctaSecondary": "Learn About Us"
+  },
+  "about": {
+    "subtitle": "About Injaz",
+    "title": "We are dedicated to your",
+    "titleAccent": "Professional Growth",
+    "description": "Injaz CTC is a leading regional provider of high-quality training and management consultancy services. We believe that human capital is the most valuable asset, and our goal is to unlock its full potential through innovation and excellence.",
+    "mission": "Our Mission",
+    "missionDesc": "Empowering individuals and organizations through knowledge and advanced technology.",
+    "vision": "Our Vision",
+    "visionDesc": "To be the preferred partner for excellence in training and IT solutions across the Middle East.",
+    "yearsExp": "Years of Professional Experience"
+  },
+  "services": {
+    "subtitle": "Our Expertise",
+    "title": "Comprehensive Solutions for",
+    "titleAccent": "Modern Businesses",
+    "training": "Professional Training",
+    "trainingDesc": "Specialized programs designed to empower your workforce with the latest skills and industry certifications.",
+    "it": "IT Solutions",
+    "itDesc": "Cutting-edge technology solutions to streamline your operations and drive digital transformation.",
+    "online": "Online Services",
+    "onlineDesc": "Seamless digital platforms and cloud services to help you reach a global audience.",
+    "learnMore": "Learn More"
+  },
+  "programs": {
+    "subtitle": "Training Programs",
+    "title": "Specialized",
+    "titleAccent": "Categories",
+    "viewAll": "View All Categories",
+    "explore": "Explore Courses",
+    "categories": {
+      "management": "Management",
+      "hr": "Human Resources",
+      "finance": "Finance & Audit",
+      "safety": "Health & Safety",
+      "engineering": "Engineering",
+      "it": "Information Tech",
+      "comm": "Communications",
+      "innovation": "Innovation"
+    },
+    "descriptions": {
+      "management": "Developing strategic leadership and operational management skills.",
+      "hr": "Strategies for talent acquisition, development, and retention.",
+      "finance": "Financial planning, reporting, and internal auditing.",
+      "safety": "Occupational health, safety, and environmental standards.",
+      "engineering": "Technical skills for engineering and maintenance teams.",
+      "it": "Modern IT certifications and software proficiency.",
+      "comm": "Public relations, media, and corporate communication.",
+      "innovation": "Design thinking and creative problem-solving methods."
+    }
+  },
+  "cta": {
+    "title": "Ready to Elevate Your Skills?",
+    "description": "Join thousands of professionals who have transformed their careers with Injaz CTC programs.",
+    "contact": "Contact Us",
+    "register": "Register Now"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "quickLinks": "Quick Links",
+    "support": "Support",
+    "contact": "Contact Info",
+    "help": "Help Center",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "address": "Main Office, Dubai Business Bay, UAE"
+  }
+}
