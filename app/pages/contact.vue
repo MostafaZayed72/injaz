@@ -1,11 +1,22 @@
 <template>
-  <div class="pt-24 pb-12 bg-white dark:bg-slate-950 min-h-screen">
+  <div class="pb-12 bg-white dark:bg-slate-950 min-h-screen">
     <!-- Header Section -->
-    <section class="py-16 bg-blue-600 dark:bg-blue-900 text-white relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-800 opacity-50"></div>
-      <div class="container mx-auto px-6 relative z-10">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">{{ t('nav.contact') }}</h1>
-        <p class="text-xl text-blue-100 max-w-2xl">{{ t('contact.subtitle') }}</p>
+    <section class="pt-32 pb-24 bg-slate-900 text-white relative overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&q=80&w=2000" 
+          class="w-full h-full object-cover opacity-20"
+          alt="Contact Us Background"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-600/20 to-slate-900"></div>
+      </div>
+      
+      <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">{{ t('nav.contact') }}</h1>
+        <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full mb-8"></div>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          {{ t('contact.subtitle') }}
+        </p>
       </div>
     </section>
 

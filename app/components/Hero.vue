@@ -41,14 +41,20 @@
           v-motion
           :initial="{ opacity: 0, scale: 0.9 }"
           :enter="{ opacity: 1, scale: 1, transition: { duration: 600, delay: 600 } }"
-          class="flex flex-wrap gap-4"
+          class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
         >
-          <button class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold text-lg shadow-xl shadow-blue-500/20 transition-all hover:-translate-y-1">
+          <NuxtLink 
+            :to="localePath('/#programs')"
+            class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-blue-500/25 flex items-center justify-center gap-2 group"
+          >
             {{ t('hero.ctaPrimary') }}
-          </button>
-          <button class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/10 backdrop-blur-md rounded-2xl font-bold text-lg transition-all hover:-translate-y-1">
+          </NuxtLink>
+          <NuxtLink 
+            :to="localePath('/about')"
+            class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 rounded-2xl font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
+          >
             {{ t('hero.ctaSecondary') }}
-          </button>
+          </NuxtLink>
         </div>
       </div>
     </div>

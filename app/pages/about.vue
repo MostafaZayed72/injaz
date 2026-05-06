@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-24 pb-12 bg-white dark:bg-slate-950 min-h-screen">
+  <div class="pb-12 bg-white dark:bg-slate-950 min-h-screen">
     <!-- Hero Section -->
-    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+    <section class="pt-32 pb-24 bg-slate-900 text-white relative overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2000" 
