@@ -64,27 +64,59 @@
 
     <!-- Mobile Menu Overlay -->
     <Transition
-      enter-active-class="transition duration-300 ease-out"
-      enter-from-class="translate-x-full"
-      enter-to-class="translate-x-0"
-      leave-active-class="transition duration-200 ease-in"
-      leave-from-class="translate-x-0"
-      leave-to-class="translate-x-full"
+      enter-active-class="transition duration-500 ease-out"
+      enter-from-class="opacity-0 translate-x-full"
+      enter-to-class="opacity-100 translate-x-0"
+      leave-active-class="transition duration-300 ease-in"
+      leave-from-class="opacity-100 translate-x-0"
+      leave-to-class="opacity-0 translate-x-full"
     >
-      <div v-if="isMenuOpen" class="fixed inset-0 z-40 lg:hidden bg-white dark:bg-slate-950 p-8 pt-24">
-        <div class="flex flex-col space-y-6">
+      <div v-if="isMenuOpen" class="fixed inset-0 z-[100] lg:hidden bg-white dark:bg-slate-950 p-6 flex flex-col overflow-y-auto">
+        <!-- Close & Header -->
+        <div class="flex items-center justify-between mb-12">
+          <img src="/logo.png" alt="Injaz Logo" class="h-10 w-auto" />
+          <button 
+            @click="isMenuOpen = false"
+            class="p-3 rounded-2xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white"
+          >
+            <XIcon class="w-6 h-6" />
+          </button>
+        </div>
+
+        <div class="flex flex-col space-y-4">
           <template v-for="link in navLinks" :key="link.name">
             <NuxtLink 
               :to="link.href"
               @click="isMenuOpen = false"
-              class="text-2xl font-bold text-slate-900 dark:text-white hover:text-blue-500 transition-colors"
+              class="text-3xl font-bold text-slate-900 dark:text-white hover:text-blue-500 transition-colors py-2 border-b border-slate-50 dark:border-slate-900"
             >
-              {{ link.name }}
+              {{ t(`nav.${link.key}`) }}
             </NuxtLink>
           </template>
-          <hr class="border-slate-100 dark:border-slate-800" />
-          <button class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold text-lg shadow-lg">
-            Get Started Now
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="mt-auto pt-10 space-y-6">
+          <div class="grid grid-cols-2 gap-4">
+            <button 
+              @click="setLocale(locale === 'ar' ? 'en' : 'ar')"
+              class="flex items-center justify-center gap-3 p-4 rounded-2xl bg-slate-100 dark:bg-slate-800 font-bold text-slate-900 dark:text-white"
+            >
+              <GlobeIcon class="w-5 h-5 text-blue-500" />
+              {{ locale === 'ar' ? 'English' : 'العربية' }}
+            </button>
+            <button 
+              @click="toggleColorMode"
+              class="flex items-center justify-center gap-3 p-4 rounded-2xl bg-slate-100 dark:bg-slate-800 font-bold text-slate-900 dark:text-white"
+            >
+              <SunIcon v-if="colorMode.value === 'dark'" class="w-5 h-5 text-yellow-500" />
+              <MoonIcon v-else class="w-5 h-5 text-indigo-500" />
+              {{ colorMode.value === 'dark' ? 'Light' : 'Dark' }}
+            </button>
+          </div>
+          
+          <button class="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-xl shadow-xl shadow-blue-500/30">
+            {{ t('nav.getStarted') }}
           </button>
         </div>
       </div>
@@ -93,7 +125,7 @@
 </template>
 
 <script setup>
-import { SunIcon, MoonIcon, MenuIcon, XIcon } from 'lucide-vue-next'
+import { SunIcon, MoonIcon, MenuIcon, XIcon, GlobeIcon } from 'lucide-vue-next'
 
 const { locale, setLocale, t } = useI18n()
 const colorMode = useColorMode()
@@ -110,10 +142,10 @@ watch(locale, (newLocale) => {
 
 const navLinks = [
   { name: 'Home', href: '/', key: 'home' },
-  { name: 'About', href: '#about', key: 'about' },
-  { name: 'Programs', href: '#programs', key: 'programs' },
-  { name: 'Services', href: '#services', key: 'services' },
-  { name: 'Contact', href: '#contact', key: 'contact' },
+  { name: 'About', href: '/about', key: 'about' },
+  { name: 'Programs', href: '/#programs', key: 'programs' },
+  { name: 'Services', href: '/#services', key: 'services' },
+  { name: 'Contact', href: '/contact', key: 'contact' },
 ]
 
 onMounted(() => {
