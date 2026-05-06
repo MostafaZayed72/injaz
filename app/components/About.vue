@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="py-24 bg-white dark:bg-slate-950 overflow-hidden">
     <div class="container mx-auto px-6">
-      <div class="flex flex-col lg:flex-row items-center gap-16">
+      <div class="flex flex-col lg:flex-row items-start gap-16 mb-20">
         <!-- Visual Side -->
         <div 
           v-motion-slide-visible-left
@@ -9,13 +9,12 @@
         >
           <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&q=80&w=1000" 
-              alt="Professional Workspace"
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1000" 
+              alt="Professional Business Meeting"
               class="w-full h-auto"
             />
           </div>
           <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl z-0"></div>
-          <div class="absolute -top-10 -left-10 w-48 h-48 bg-indigo-600/10 rounded-full blur-3xl z-0"></div>
           
           <!-- Experience Badge -->
           <div class="absolute bottom-10 left-10 z-20 glass p-6 rounded-2xl shadow-xl">
@@ -39,26 +38,45 @@
             {{ t('about.description') }}
           </p>
 
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-blue-600 mb-4">
-                <TargetIcon class="w-6 h-6" />
-              </div>
-              <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">{{ t('about.vision') }}</h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400">
-                {{ t('about.visionDesc') }}
+          <div class="space-y-8">
+            <div>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center">
+                <div class="w-2 h-8 bg-blue-600 mr-3 rtl:mr-0 rtl:ml-3 rounded-full"></div>
+                {{ t('about.approachTitle') }}
+              </h4>
+              <p class="text-slate-500 dark:text-slate-400 mb-6">
+                {{ t('about.approachDesc') }}
               </p>
-            </div>
-            <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl flex items-center justify-center text-indigo-600 mb-4">
-                <CompassIcon class="w-6 h-6" />
+              <div class="grid grid-cols-2 gap-4">
+                <div v-for="(val, key) in approachItems" :key="key" class="flex items-center p-4 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                  <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 mr-3 rtl:mr-0 rtl:ml-3">
+                    <CheckIcon class="w-4 h-4" />
+                  </div>
+                  <span class="font-bold text-slate-700 dark:text-slate-300 text-sm">{{ t(`about.approachItems.${key}`) }}</span>
+                </div>
               </div>
-              <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">{{ t('about.mission') }}</h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400">
-                {{ t('about.missionDesc') }}
-              </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Vision/Mission/Goal Cards -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <div 
+          v-for="(item, idx) in coreValues" 
+          :key="item.key"
+          v-motion
+          :initial="{ opacity: 0, y: 30 }"
+          :visible="{ opacity: 1, y: 0, transition: { delay: idx * 150 } }"
+          class="p-8 rounded-[2rem] bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all group"
+        >
+          <div :class="`w-14 h-14 rounded-2xl ${item.bg} flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-current/20` ">
+            <component :is="item.icon" class="w-7 h-7" />
+          </div>
+          <h4 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">{{ t(`about.${item.key}`) }}</h4>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+            {{ t(`about.${item.key}Desc`) }}
+          </p>
         </div>
       </div>
     </div>
@@ -66,6 +84,25 @@
 </template>
 
 <script setup>
-import { TargetIcon, CompassIcon } from 'lucide-vue-next'
+import { 
+  TargetIcon, 
+  CompassIcon, 
+  FlagIcon,
+  CheckIcon
+} from 'lucide-vue-next'
+
 const { t } = useI18n()
+
+const approachItems = {
+  consulting: 'consulting',
+  training: 'training',
+  coaching: 'coaching',
+  workshops: 'workshops'
+}
+
+const coreValues = [
+  { key: 'vision', icon: CompassIcon, bg: 'bg-blue-600' },
+  { key: 'mission', icon: TargetIcon, bg: 'bg-indigo-600' },
+  { key: 'goal', icon: FlagIcon, bg: 'bg-emerald-600' }
+]
 </script>

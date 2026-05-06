@@ -15,15 +15,25 @@
     "ctaSecondary": "Learn About Us"
   },
   "about": {
-    "subtitle": "About Injaz",
-    "title": "We are dedicated to your",
-    "titleAccent": "Professional Growth",
-    "description": "Injaz CTC is a leading regional provider of high-quality training and management consultancy services. We believe that human capital is the most valuable asset, and our goal is to unlock its full potential through innovation and excellence.",
-    "mission": "Our Mission",
-    "missionDesc": "Empowering individuals and organizations through knowledge and advanced technology.",
+    "subtitle": "About INJAZ CTC",
+    "title": "We are Pioneers in",
+    "titleAccent": "Professional Excellence",
+    "description": "As experts in organizational professional services, we provide Consultancy & Training, and corporate structure design to guide leaders towards advanced solutions for a sustainable future.",
+    "approachTitle": "Our Learning Approach",
+    "approachDesc": "We bridge the gap between training and real-world business environments. Our programs are designed to enhance skills through:",
+    "approachItems": {
+      "consulting": "Strategic Consulting",
+      "training": "Professional Training",
+      "coaching": "Executive Coaching",
+      "workshops": "Practical Workshops"
+    },
     "vision": "Our Vision",
-    "visionDesc": "To be the preferred partner for excellence in training and IT solutions across the Middle East.",
-    "yearsExp": "Years of Professional Experience"
+    "visionDesc": "To be a center of excellence qualified to connect, meet, and share with the Global Community.",
+    "mission": "Our Mission",
+    "missionDesc": "Contributing leaders to be at the heart of future business realities.",
+    "goal": "Our Goal",
+    "goalDesc": "To achieve sustainable growth and become the market leader in training and consultancy.",
+    "yearsExp": "Years of Professional Excellence"
   },
   "services": {
     "subtitle": "Our Expertise",
