@@ -32,10 +32,10 @@
         <div>
           <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">{{ t('footer.quickLinks') }}</h4>
           <ul class="space-y-4">
-            <li><a href="#" class="hover:text-blue-500 transition-colors">{{ t('nav.about') }}</a></li>
-            <li><a href="#" class="hover:text-blue-500 transition-colors">{{ t('nav.programs') }}</a></li>
-            <li><a href="#" class="hover:text-blue-500 transition-colors">{{ t('nav.services') }}</a></li>
-            <li><a href="#" class="hover:text-blue-500 transition-colors">{{ t('nav.contact') }}</a></li>
+            <li><NuxtLink :to="localePath('/about')" class="hover:text-blue-500 transition-colors">{{ t('nav.about') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/#programs')" class="hover:text-blue-500 transition-colors">{{ t('nav.programs') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/#services')" class="hover:text-blue-500 transition-colors">{{ t('nav.services') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/contact')" class="hover:text-blue-500 transition-colors">{{ t('nav.contact') }}</NuxtLink></li>
           </ul>
         </div>
 
@@ -88,5 +88,6 @@ import {
 } from 'lucide-vue-next'
 
 const { t } = useI18n()
+const localePath = useLocalePath()
 </script>
 

@@ -17,9 +17,12 @@
           v-for="link in navLinks" 
           :key="link.key"
           :to="localePath(link.href)"
-          exact-active-class="!text-blue-500"
           class="text-sm font-bold transition-colors hover:text-blue-500"
-          :class="[scrolled ? 'text-slate-700 dark:text-slate-200' : 'text-white']"
+          :class="[
+            route.fullPath === localePath(link.href) || (link.href === '/' && route.path === localePath('/'))
+              ? '!text-blue-500' 
+              : (scrolled ? 'text-slate-700 dark:text-slate-200' : 'text-white')
+          ]"
         >
           {{ t(`nav.${link.key}`) }}
         </NuxtLink>
