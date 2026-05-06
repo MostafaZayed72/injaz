@@ -96,8 +96,12 @@
             :key="link.key"
             :to="localePath(link.href)"
             @click="isMenuOpen = false"
-            exact-active-class="!text-blue-600"
-            class="text-3xl font-bold text-slate-900 dark:text-white hover:text-blue-500 transition-colors py-2 border-b border-slate-50 dark:border-slate-900"
+            class="text-3xl font-bold transition-colors py-2 border-b border-slate-50 dark:border-slate-900"
+            :class="[
+              route.fullPath === localePath(link.href) || (link.href === '/' && route.path === localePath('/'))
+                ? 'text-blue-500' 
+                : 'text-slate-900 dark:text-white'
+            ]"
           >
             {{ t(`nav.${link.key}`) }}
           </NuxtLink>
@@ -129,6 +133,7 @@ import { SunIcon, MoonIcon, MenuIcon, XIcon, GlobeIcon } from 'lucide-vue-next'
 
 const { locale, setLocale, t } = useI18n()
 const localePath = useLocalePath()
+const route = useRoute()
 const colorMode = useColorMode()
 const scrolled = ref(false)
 const isMenuOpen = ref(false)
