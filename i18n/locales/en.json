@@ -90,11 +90,64 @@
         "title": "Leading High Performance Teams",
         "description": "Teams often depend on how well the team operates. How are their problem-solving skills? Do they work well together? There have been hundreds of human beings function better and learn better in groups. If participants want to unleash the talent of their individual team members, this workshop is a leadership practices that work.",
         "objectives": [
-          "Identify and tapping into the twelve characteristics of an effective team",
-          "Promote trust and rapport by exploring their team player style and how it impacts group dynamics",
-          "Recognize the key elements that move a team from involvement to empowerment and how to give these elements to their team",
-          "Develop strategies for dealing with team conflict and common situations",
-          "Understand how action planning and analysis tools can help their team perform better"
+          "Identify and tapping into the twelve characteristics of an effective team.",
+          "Promote trust and rapport by exploring their team player style and how it impacts group dynamics.",
+          "Recognize the key elements that move a team from involvement to empowerment and how to give these elements to their team.",
+          "Develop strategies for dealing with team conflict and common situations.",
+          "Understand how action planning and analysis tools can help their team perform better."
+        ]
+      },
+      "managementSkills": {
+        "title": "Developing Management Skills",
+        "description": "This program aims at enhancing the potential of individuals both as part of an organisation and as active members of a healthy society. Our focus is to provide unique services that respond to the demands of a competitive and challenging world.",
+        "objectives": [
+          "Enhancing the potential of individuals within organizations.",
+          "Providing unique services responding to competitive demands.",
+          "Implementing realistic concepts and quality solutions.",
+          "Monitoring external environment and welcoming change.",
+          "Building long-term professional relationships."
+        ]
+      },
+      "strategicPlanning": {
+        "title": "Strategic Thinking and Planning",
+        "description": "Strategic thinking and planning training teaches you how to make the most of the information you have, as well as how to present compelling arguments and clearly reason your way to success in the workplace, especially in an era of information overload.",
+        "objectives": [
+          "Develop critical thinking by identifying the right style.",
+          "Strengthen and improve that style.",
+          "Work through the critical thinking process.",
+          "Develop and evaluate explanations.",
+          "Use effective reasoning techniques to avoid falling into common pitfalls and illogical traps."
+        ]
+      },
+      "changeManagement": {
+        "title": "Change Management",
+        "description": "In this course, participants learn how to cope with continuous changes in the workplace, whether in organizational structure or technology, and turn challenges into opportunities for innovation.",
+        "objectives": [
+          "Handle transition periods efficiently.",
+          "Learn to see change as an opportunity for motivation and innovation.",
+          "Handle change in a healthy and non-stressful way."
+        ]
+      },
+      "problemSolving": {
+        "title": "Problem Solving and Decision Making",
+        "description": "This workshop helps you learn new ways to approach problem solving and develop practical ways to solve some of your most pressing problems, reaching win-win solutions through collaborative thinking.",
+        "objectives": [
+          "Increase awareness of problem-solving steps and tools.",
+          "Distinguish root cause from symptoms.",
+          "Improve decision-making skills through identifying personal styles.",
+          "Improve ability to participate in collaborative problem-solving.",
+          "Recognize the top ten rules of good decision-making."
+        ]
+      },
+      "coachingPerformance": {
+        "title": "Coaching for Creative Performance",
+        "description": "Coaching is based on a partnership that involves giving both support and challenging opportunities to employees. This workshop will help participants become better coaches, benefiting both the individual and the organization.",
+        "objectives": [
+          "Understand how coaching can be used to develop their team.",
+          "Develop coaching skills that help improve individual performance.",
+          "Demonstrate the behaviors and practices of an effective coach.",
+          "Recognize employees' strengths and give them constructive feedback.",
+          "Identify employee problems and ways they can help to correct them."
         ]
       }
     }

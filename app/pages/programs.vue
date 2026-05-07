@@ -76,19 +76,19 @@
         <main class="lg:w-2/3 xl:w-3/4">
           <Transition name="fade" mode="out-in">
             <div :key="activeSub" class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 md:p-12 border border-slate-100 dark:border-slate-800 shadow-xl">
-              <div v-if="activeSub === 'leadingTeams'">
+              <div v-if="activeSub !== 'none'">
                 <div class="mb-10">
                   <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight">
-                    {{ t('programs.management.leadingTeams.title') }}
+                    {{ activeProgramContent.title }}
                   </h1>
                   <div class="h-1.5 w-24 bg-primary rounded-full mb-10"></div>
                   
                   <p class="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-12">
-                    {{ t('programs.management.leadingTeams.description') }}
+                    {{ activeProgramContent.description }}
                   </p>
                 </div>
 
-                <div class="space-y-12">
+                <div v-if="objectivesList.length > 0" class="space-y-12">
                   <div>
                     <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
                       <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
@@ -205,16 +205,27 @@ import {
   XIcon
 } from 'lucide-vue-next'
 
-const { t, locale, tm } = useI18n()
+const { t, locale, tm, rt } = useI18n()
 
 const activeCategory = ref('management')
 const activeSub = ref('leadingTeams')
 const isMobileMenuOpen = ref(false)
 
+// Dynamic content based on selection
+const activeProgramContent = computed(() => {
+  if (activeSub.value === 'none') return {}
+  return {
+    title: t(`programs.${activeCategory.value}.${activeSub.value}.title`),
+    description: t(`programs.${activeCategory.value}.${activeSub.value}.description`)
+  }
+})
+
 // Fixed objectives retrieval
 const objectivesList = computed(() => {
-  const objectives = tm('programs.management.leadingTeams.objectives')
-  return Array.isArray(objectives) ? objectives : []
+  if (activeSub.value === 'none') return []
+  const res = tm(`programs.${activeCategory.value}.${activeSub.value}.objectives`)
+  if (!Array.isArray(res)) return []
+  return res.map(item => rt(item))
 })
 
 const selectSub = (id) => {
@@ -237,7 +248,12 @@ const categories = computed(() => ({
 
 const subCategories = computed(() => ({
   management: [
-    { id: 'leadingTeams', name: t('programs.management.leadingTeams.title') }
+    { id: 'leadingTeams', name: t('programs.management.leadingTeams.title') },
+    { id: 'managementSkills', name: t('programs.management.managementSkills.title') },
+    { id: 'strategicPlanning', name: t('programs.management.strategicPlanning.title') },
+    { id: 'changeManagement', name: t('programs.management.changeManagement.title') },
+    { id: 'problemSolving', name: t('programs.management.problemSolving.title') },
+    { id: 'coachingPerformance', name: t('programs.management.coachingPerformance.title') }
   ]
 }))
 
