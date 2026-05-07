@@ -150,6 +150,64 @@
           "Identify employee problems and ways they can help to correct them."
         ]
       }
+    },
+    "worklife": {
+      "personalDev": {
+        "title": "Personal Development",
+        "description": "Personal development is to improve your personal efficiency and your communication skills to develop yourself and your career, helping you interact positively and reduce stress in the workplace.",
+        "objectives": [
+          "Develop self-esteem and assertiveness.",
+          "Make an impact at meetings and companies.",
+          "Respond constructively to criticism.",
+          "Manage anger in a positive way.",
+          "Map your time effectively.",
+          "Know yourself and your ability to be brilliant."
+        ]
+      },
+      "stressManagement": {
+        "title": "Stress Management",
+        "description": "This program helps staff and senior managers deal with job burnout and stress, restoring their work-life balance to improve corporate performance and long-term growth.",
+        "objectives": [
+          "Understand that stress is a positive and unavoidable part of life.",
+          "Recognize symptoms of chronic stress overload.",
+          "Identify situations and actions that cause the greatest stress.",
+          "Develop strategies for changing changeable stress factors.",
+          "Develop techniques for dealing with unchangeable situations."
+        ]
+      },
+      "creativeThinking": {
+        "title": "Creative Thinking",
+        "description": "Creative thinking is about exploring new ideas and generating innovative possibilities rather than relying on one traditional answer. Learn how to be creative in practical business solutions.",
+        "objectives": [
+          "Make better decisions through critical thinking and creative problem solving.",
+          "Analyse different methods to achieve your objectives efficiently.",
+          "Present your ideas clearly to have maximum impact on stakeholders.",
+          "Apply creativity into practical business solutions.",
+          "Develop your personal decision-making toolkit."
+        ]
+      },
+      "emotionalIntelligence": {
+        "title": "Emotional Intelligence (EQ)",
+        "description": "What makes great leaders extraordinary is their EQ. Learn to manage your emotions and understand others' to improve decision quality and team momentum in the workplace.",
+        "objectives": [
+          "Connect effectively between physical and emotional health.",
+          "Manage the range of emotions with professional intelligence.",
+          "Recognise and develop essential EQ skills.",
+          "Validate emotions in others and master constructive emotional debate.",
+          "Apply EQ concepts to increase productivity in the workplace."
+        ]
+      },
+      "bodyLanguage": {
+        "title": "Understanding Body Language",
+        "description": "Body language is key to building trust and credibility. Learn to read others' signals and control your own to ensure your verbal message aligns with your body language in all spheres of life.",
+        "objectives": [
+          "Understand the impact of body language on building trust and credibility.",
+          "Learn to read signals from clients and colleagues.",
+          "Improve your personal body language to enhance your presence.",
+          "Use body language as an effective tool in sales and negotiation.",
+          "Align body language with speech to ensure clarity."
+        ]
+      }
     }
   },
   "cta": {

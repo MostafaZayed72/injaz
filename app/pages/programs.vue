@@ -254,6 +254,13 @@ const subCategories = computed(() => ({
     { id: 'changeManagement', name: t('programs.management.changeManagement.title') },
     { id: 'problemSolving', name: t('programs.management.problemSolving.title') },
     { id: 'coachingPerformance', name: t('programs.management.coachingPerformance.title') }
+  ],
+  worklife: [
+    { id: 'personalDev', name: t('programs.worklife.personalDev.title') },
+    { id: 'stressManagement', name: t('programs.worklife.stressManagement.title') },
+    { id: 'creativeThinking', name: t('programs.worklife.creativeThinking.title') },
+    { id: 'emotionalIntelligence', name: t('programs.worklife.emotionalIntelligence.title') },
+    { id: 'bodyLanguage', name: t('programs.worklife.bodyLanguage.title') }
   ]
 }))
 
