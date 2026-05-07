@@ -4,7 +4,9 @@
     "about": "About",
     "services": "Services",
     "programs": "Programs",
-    "contact": "Contact",
+    "certification": "Certification",
+    "associations": "Associations",
+    "contact": "Contact Us",
     "getStarted": "Get Started"
   },
   "hero": {
@@ -47,15 +49,49 @@
   },
   "services": {
     "subtitle": "Our Expertise",
-    "title": "Comprehensive Solutions for",
-    "titleAccent": "Modern Businesses",
-    "training": "Professional Training",
-    "trainingDesc": "Specialized programs designed to empower your workforce with the latest skills and industry certifications.",
-    "it": "IT Solutions",
-    "itDesc": "Cutting-edge technology solutions to streamline your operations and drive digital transformation.",
-    "online": "Online Services",
-    "onlineDesc": "Seamless digital platforms and cloud services to help you reach a global audience.",
-    "learnMore": "Learn More"
+    "homeTitle": "Comprehensive Solutions for",
+    "homeTitleAccent": "Modern Businesses",
+    "learnMore": "Learn More",
+    "training": {
+      "title": "Training Consultancy",
+      "homeDesc": "Specialized programs designed to empower your workforce with the latest skills and industry certifications.",
+      "description": "Customized training programs designed to meet the requirements of both individuals and organizations, delivered by qualified international professionals with extensive business experience.",
+      "features": [
+        "Bespoke programs tailored to your specific organizational needs.",
+        "Academic and business experts from international backgrounds.",
+        "Flexible delivery and customized content development."
+      ]
+    },
+    "it": {
+      "title": "IT Solutions",
+      "homeDesc": "Cutting-edge technology solutions to streamline your operations and drive digital transformation.",
+      "description": "A leading managed services provider of IT support and maintenance, specializing in helping small and medium-sized businesses maintain robust technical infrastructures.",
+      "features": [
+        "24/7 Managed IT support and maintenance services.",
+        "Expertise in SME technical requirements and growth.",
+        "Robust infrastructure solutions for modern business."
+      ]
+    },
+    "online": {
+      "title": "Online Education",
+      "homeDesc": "Seamless digital platforms and cloud services to help you reach a global audience.",
+      "description": "Providing flexible e-Learning solutions for challenging times. We offer over 368 courses in Business, Management, and Computer Skills for individuals and organizations.",
+      "features": [
+        "Access to over 368 specialized e-courses.",
+        "Focus on Business, Management, and IT skills.",
+        "Flexible learning platform for on-the-go education."
+      ]
+    },
+    "psychometric": {
+      "title": "Psychometric Test",
+      "homeDesc": "Advanced assessment tools that empower leaders and impact organizations by matching the right candidates to the right jobs.",
+      "description": "Advanced assessment tools that empower leaders and impact organizations by matching the right candidates to the right jobs with rapid, reliable results.",
+      "features": [
+        "Quick and accurate results for leadership decisions.",
+        "Scientifically-backed matching of talent to roles.",
+        "Comprehensive assessment of organizational potential."
+      ]
+    }
   },
   "programs": {
     "subtitle": "Training Programs",
@@ -208,6 +244,236 @@
           "Align body language with speech to ensure clarity."
         ]
       }
+    },
+    "business": {
+      "englishFoundation": {
+        "title": "Business English Foundation",
+        "description": "Equip yourself with the confidence and skills to communicate in proper English in business situations, including emails, presentations, and telephone etiquette.",
+        "objectives": [
+          "Understand and write professional emails.",
+          "Deliver clear presentations in English.",
+          "Master telephone etiquette and visitor reception.",
+          "Negotiate and chair meetings in English."
+        ]
+      },
+      "businessWriting": {
+        "title": "Business Writing",
+        "description": "Learn to get your message across 'first time right'. This course focuses on effective, clear business writing for professionals at all levels.",
+        "objectives": [
+          "Write clear and concise documents for business objectives.",
+          "Adapt writing to the target audience's needs.",
+          "Enhance email and reporting communication.",
+          "Distinguish between formal and informal language.",
+          "Develop spelling, grammar, and professional writing skills."
+        ]
+      },
+      "technicalReport": {
+        "title": "Technical Report Writing",
+        "description": "A specialized workshop for writing effective reports and proposals directly related to your field, designed for all managerial levels.",
+        "objectives": [
+          "Value written reports as a communication tool.",
+          "Recognize and use professional report formats.",
+          "Use structured signposting to guide the reader.",
+          "Prepare reports that inform and persuade effectively.",
+          "Proofread work for clarity, conciseness, and correctness."
+        ]
+      },
+      "meetingMinutes": {
+        "title": "Minutes of Meetings",
+        "description": "Accurate minutes are the memory of any successful meeting. Learn the essential skills and techniques to produce professional minutes.",
+        "objectives": [
+          "Recognize the importance of accurate minute-taking.",
+          "Write minutes suitable for formal and informal meetings.",
+          "Develop listening and summarizing skills for documentation.",
+          "Remedy common challenges faced by minute-takers."
+        ]
+      }
+    },
+    "media": {
+      "marketing": {
+        "title": "Marketing Consultancy",
+        "description": "Understand and plan your marketing strategy through digital channels. We help you draft press releases and execute effective social media and email marketing campaigns.",
+        "objectives": [
+          "Develop successful and competitive products.",
+          "Produce creative and effective marketing campaigns.",
+          "Master key digital marketing techniques.",
+          "Manage and execute digital marketing assignments efficiently.",
+          "Understand legal considerations in digital marketing."
+        ]
+      },
+      "communication": {
+        "title": "Communication Skills",
+        "description": "Effective communication is the key to business and personal success. Learn to express yourself clearly, influence others, and master the art of listening and body language.",
+        "objectives": [
+          "Recognize and use advanced communication skills.",
+          "Adapt to different thinking styles and abilities.",
+          "Plan appropriate ways to influence and deliver messages.",
+          "Think and communicate creatively in all situations.",
+          "Leverage listening skills and body language for better impact."
+        ]
+      }
+    },
+    "hr": {
+      "managementSkills": {
+        "title": "HR Management Skills",
+        "description": "Learn the latest trends in HR, including job specifications, core competencies, and behavioral interviewing techniques to find and keep the best talent.",
+        "objectives": [
+          "Recognize the changing role of HR professionals.",
+          "Write job specifications and identify competencies.",
+          "Master behavioral description interviewing techniques.",
+          "Deal with compensation, benefits, and employee relations.",
+          "Make performance appraisals a cooperative process."
+        ]
+      },
+      "trainTrainer": {
+        "title": "Train The Trainer (TOT)",
+        "description": "Develop the skills to bring information to an audience in a way that engages, empowers, and encourages continued learning based on adult learning principles.",
+        "objectives": [
+          "Understand participant needs and learning styles.",
+          "Write measurable objectives and evaluate sessions.",
+          "Develop an effective training style and use aids.",
+          "Conduct practical group training sessions."
+        ]
+      },
+      "jobDescription": {
+        "title": "Writing Effective Job Description",
+        "description": "Create dynamic and functional job descriptions that define major areas of a position and help avoid assignment refusal through careful fact analysis.",
+        "objectives": [
+          "Identify specific tasks and completion methods.",
+          "Define the purpose and responsibilities of the job.",
+          "Understand relationships of the job to others.",
+          "Define qualifications and job objectives clearly.",
+          "Describe functional relationships and roles within a team."
+        ]
+      }
+    },
+    "finance": {
+      "awareness": {
+        "title": "Financial Awareness For The Non-Financial People",
+        "description": "Designed for professionals who want to better understand the financial side of business, covering budgeting, forecasting, and credit control to enhance organizational success.",
+        "objectives": [
+          "Finance for non-finance professionals.",
+          "Budgeting and forecasting principles.",
+          "Credit control and collection procedures.",
+          "Specialized financial report writing.",
+          "Effective debt collection management."
+        ]
+      }
+    },
+    "it": {
+      "word": {
+        "title": "Microsoft Word",
+        "description": "Master the art of creating professional documents, reports, and letters with the world's most popular word processor. Learn formatting, styling, and advanced document management.",
+        "objectives": [
+          "Create and format professional reports and official documents.",
+          "Apply styles and themes for consistent branding.",
+          "Incorporate tables, images, and smart graphics effectively.",
+          "Master page setup, section breaks, and printing options.",
+          "Utilize mail merge for personalized bulk communications."
+        ]
+      },
+      "excelBasics": {
+        "title": "Microsoft Excel Basics",
+        "description": "Learn to use spreadsheets for calculations, data analysis, and reporting. This course provides the foundation for using MS Excel functions and features to solve business issues.",
+        "objectives": [
+          "Understand the overall concept of spreadsheets.",
+          "Create, edit, format, and print spreadsheets.",
+          "Learn basic and intermediate MS Excel formulas.",
+          "Export graphs and charts for professional reporting.",
+          "Organize and manage large data sets efficiently."
+        ]
+      },
+      "powerpointIntermediate": {
+        "title": "Microsoft PowerPoint (Intermediate)",
+        "description": "Improve your presentation skills to create engaging, visually rich, and interactive presentations. Learn advanced picture handling and Smart Art integration.",
+        "objectives": [
+          "Manage PowerPoint files and custom templates.",
+          "Add professional finishing touches to slides.",
+          "Insert and customize Smart Art, tables, and charts.",
+          "Create interactive and collaborative presentations.",
+          "Master technical delivery and presentation techniques."
+        ]
+      },
+      "outlookAdvanced": {
+        "title": "Microsoft Outlook (Advanced)",
+        "description": "Advanced tools for busy managers to manage emails and personal information. Includes features for calendar, tasks, and address book management.",
+        "objectives": [
+          "Master advanced email features and automation rules.",
+          "Use advanced information management tools.",
+          "Handle data management and archiving efficiently.",
+          "Enhance Outlook security and privacy settings.",
+          "Manage complex schedules and task assignments."
+        ]
+      }
+    },
+    "customer": {
+      "etiquette": {
+        "title": "Etiquette for Excellence Customer Service",
+        "description": "Build your credibility as a competent and confident professional through good business etiquette. Learn to make great first impressions and develop relationships with ease.",
+        "objectives": [
+          "Feel more confident in business communications.",
+          "Understand appropriate workplace dress codes.",
+          "Handle business meetings and professional lunches.",
+          "Avoid behavior that might offend clients or colleagues.",
+          "Master the art of making great first impressions."
+        ]
+      },
+      "telephone": {
+        "title": "Telephone Skills and Customer Care",
+        "description": "The telephone remains one of the most effective ways to reach customers directly. Master telephone etiquette and telemarketing skills to build better client relationships.",
+        "objectives": [
+          "Increase telephone etiquette and vocal confidence.",
+          "Learn key telemarketing and sales tips.",
+          "Use the telephone as a powerful sales and support tool.",
+          "Ensure professional follow-ups and return calls.",
+          "Deliver effective sales presentations over the phone.",
+          "Build customer confidence during telephone interactions."
+        ]
+      }
+    },
+    "languages": {
+      "overview": {
+        "title": "Languages",
+        "description": "Language is more than just communication; it's a bridge to understanding and successful business relationships. Injaz CTC teaches you to speak and write effectively, removing barriers and nurturing lasting ties.",
+        "objectives": [
+          "Communicate effectively across different languages.",
+          "Master professional reading and writing skills.",
+          "Build strong cultural ties and understanding.",
+          "Set up and nurture economic and business relationships."
+        ]
+      }
+    }
+  },
+  "certification": {
+    "overview": {
+      "title": "Certification Courses, a path to career progression",
+      "description": "Are you an ambitious individual who wants to climb the career ladder in your professional life? Whether you have just finished the University or you are working but are keen to move up in the organization and believe that you require further professional training to fulfill your career ambitions, then we have the answer for you.",
+      "objectives": [
+        "Chartered Financial Analyst (CFA)",
+        "Certified Management Accountant (CMA)",
+        "Certified Public Accountant (CPA)",
+        "Certified Internal Auditor (CIA)",
+        "Senior/Professional Human Resources (SPHR/PHR)",
+        "Certified Manager (CM)"
+      ]
+    }
+  },
+  "associations": {
+    "title": "Associations & Partners",
+    "welcome": "Welcome to INJAZ CTC",
+    "description": "INJAZ CTC is a Training and Development Consultancy with the aim of enhancing the potential of individuals both as part of an organisation and as active members of a healthy society. Our focus is to provide unique services that respond to the demands of a competitive and challenging world.",
+    "quote": "Remember... People who work and live to their potential are the ones who can change the world!",
+    "expertise": "INJAZ CTC Training Consultancy is an expert firm for development in the field of Management, Human Resources and Health & Safety environment. We provide to our partners the realistic concepts, the quality solutions & the methodologies to help them maintain external environment, monitor and welcome change.",
+    "offer": "INJAZ CTC offers a range of Consulting, Training & Services to a large and variants organization, both private and public, facing to build life long relationship.",
+    "list": {
+      "dqg": {
+        "name": "Dubai Quality Group",
+        "type": "Strategic Partner"
+      },
+      "efqm": {
+        "name": "EFQM",
+        "type": "Shares what works"
+      }
     }
   },
   "cta": {
@@ -224,12 +490,19 @@
     "help": "Help Center",
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
-    "address": "Main Office, Dubai Business Bay, UAE"
+    "address": "Dubai, United Arab Emirates",
+    "phone": "+971 4 385 1666",
+    "fax": "+971 4 385 1116",
+    "email": "info{'@'}injazctc.com",
+    "skype": "injazctc",
+    "pobox": "P. O. Box: 283503"
   },
   "contact": {
-    "subtitle": "We are here to help. Reach out to us for any inquiries about our programs or consultancy services.",
+    "subtitle": "Please feel free to contact us by any means you prefer.",
     "address": "Address",
     "phone": "Phone Number",
+    "fax": "Fax",
+    "skype": "Skype",
     "email": "Email Address",
     "formTitle": "Send us a Message",
     "formDesc": "Fill out the form below and one of our consultants will get back to you shortly.",

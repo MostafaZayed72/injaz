@@ -55,15 +55,24 @@
           <ul class="space-y-6">
             <li class="flex items-start">
               <MapPinIcon class="w-5 h-5 text-primary mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
-              <span class="text-sm">{{ t('footer.address') }}</span>
+              <div class="flex flex-col gap-1">
+                <span class="text-sm font-bold text-white">{{ t('footer.address') }}</span>
+                <span class="text-xs">{{ t('footer.pobox') }}</span>
+              </div>
             </li>
             <li class="flex items-center">
               <PhoneIcon class="w-5 h-5 text-primary mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
-              <span class="text-sm" dir="ltr">+971 4 000 0000</span>
+              <div class="flex flex-col gap-1">
+                <span class="text-sm" dir="ltr">{{ t('footer.phone') }}</span>
+                <span class="text-xs opacity-70" dir="ltr">Fax: {{ t('footer.fax') }}</span>
+              </div>
             </li>
             <li class="flex items-center">
               <MailIcon class="w-5 h-5 text-primary mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
-              <span class="text-sm">info@injazctc.com</span>
+              <div class="flex flex-col gap-1">
+                <span class="text-sm">{{ t('footer.email') }}</span>
+                <span class="text-xs opacity-70">Skype: {{ t('footer.skype') }}</span>
+              </div>
             </li>
           </ul>
         </div>

@@ -143,7 +143,9 @@ const navLinks = [
   { name: 'Home', href: '/', key: 'home' },
   { name: 'About', href: '/about', key: 'about' },
   { name: 'Programs', href: '/programs', key: 'programs' },
-  { name: 'Services', href: '/#services', key: 'services' },
+  { name: 'Services', href: '/services', key: 'services' },
+  { name: 'Certification', href: '/certification', key: 'certification' },
+  { name: 'Associations', href: '/associations', key: 'associations' },
   { name: 'Contact', href: '/contact', key: 'contact' }
 ]
 

@@ -51,12 +51,14 @@
                   :class="[activeCategory === catKey ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 hover:text-primary']"
                 >
                   <span>{{ catName }}</span>
-                  <ChevronLeftIcon v-if="locale === 'ar'" class="w-4 h-4 transition-transform group-hover:-translate-x-1" :class="{'rotate-180': activeCategory === catKey}" />
-                  <ChevronRightIcon v-else class="w-4 h-4 transition-transform group-hover:translate-x-1" :class="{'rotate-180': activeCategory === catKey}" />
+                  <template v-if="subCategories[catKey] && subCategories[catKey].length > 1">
+                    <ChevronLeftIcon v-if="locale === 'ar'" class="w-4 h-4 transition-transform group-hover:-translate-x-1" :class="{'rotate-180': activeCategory === catKey}" />
+                    <ChevronRightIcon v-else class="w-4 h-4 transition-transform group-hover:translate-x-1" :class="{'rotate-180': activeCategory === catKey}" />
+                  </template>
                 </button>
                 
                 <!-- Sub Menu -->
-                <div v-if="activeCategory === catKey && subCategories[catKey]" class="mt-2 mr-4 rtl:mr-4 ltr:ml-4 space-y-1">
+                <div v-if="activeCategory === catKey && subCategories[catKey] && subCategories[catKey].length > 1" class="mt-2 mr-4 rtl:mr-4 ltr:ml-4 space-y-1">
                   <button 
                     v-for="sub in subCategories[catKey]"
                     :key="sub.id"
@@ -164,10 +166,10 @@
               :class="[activeCategory === catKey ? 'bg-primary text-white' : 'bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300']"
             >
               <span>{{ catName }}</span>
-              <ChevronDownIcon class="w-5 h-5 transition-transform" :class="{'rotate-180': activeCategory === catKey}" />
+              <ChevronDownIcon v-if="subCategories[catKey] && subCategories[catKey].length > 1" class="w-5 h-5 transition-transform" :class="{'rotate-180': activeCategory === catKey}" />
             </button>
             
-            <div v-if="activeCategory === catKey && subCategories[catKey]" class="mt-2 space-y-2 mr-4">
+            <div v-if="activeCategory === catKey && subCategories[catKey] && subCategories[catKey].length > 1" class="mt-2 space-y-2 mr-4">
               <button 
                 v-for="sub in subCategories[catKey]"
                 :key="sub.id"
@@ -178,7 +180,7 @@
                 {{ sub.name }}
               </button>
             </div>
-            <div v-else-if="activeCategory === catKey" class="mt-2">
+            <div v-else-if="activeCategory === catKey && (!subCategories[catKey] || subCategories[catKey].length === 0)" class="mt-2">
                <button 
                 @click="isMobileMenuOpen = false"
                 class="w-full text-right rtl:text-right ltr:text-left p-4 rounded-xl text-lg font-bold bg-slate-50 dark:bg-slate-800 text-slate-400 italic"
@@ -261,6 +263,37 @@ const subCategories = computed(() => ({
     { id: 'creativeThinking', name: t('programs.worklife.creativeThinking.title') },
     { id: 'emotionalIntelligence', name: t('programs.worklife.emotionalIntelligence.title') },
     { id: 'bodyLanguage', name: t('programs.worklife.bodyLanguage.title') }
+  ],
+  business: [
+    { id: 'englishFoundation', name: t('programs.business.englishFoundation.title') },
+    { id: 'businessWriting', name: t('programs.business.businessWriting.title') },
+    { id: 'technicalReport', name: t('programs.business.technicalReport.title') },
+    { id: 'meetingMinutes', name: t('programs.business.meetingMinutes.title') }
+  ],
+  media: [
+    { id: 'marketing', name: t('programs.media.marketing.title') },
+    { id: 'communication', name: t('programs.media.communication.title') }
+  ],
+  hr: [
+    { id: 'managementSkills', name: t('programs.hr.managementSkills.title') },
+    { id: 'trainTrainer', name: t('programs.hr.trainTrainer.title') },
+    { id: 'jobDescription', name: t('programs.hr.jobDescription.title') }
+  ],
+  finance: [
+    { id: 'awareness', name: t('programs.finance.awareness.title') }
+  ],
+  it: [
+    { id: 'word', name: t('programs.it.word.title') },
+    { id: 'excelBasics', name: t('programs.it.excelBasics.title') },
+    { id: 'powerpointIntermediate', name: t('programs.it.powerpointIntermediate.title') },
+    { id: 'outlookAdvanced', name: t('programs.it.outlookAdvanced.title') }
+  ],
+  customer: [
+    { id: 'etiquette', name: t('programs.customer.etiquette.title') },
+    { id: 'telephone', name: t('programs.customer.telephone.title') }
+  ],
+  languages: [
+    { id: 'overview', name: t('programs.languages.overview.title') }
   ]
 }))
 
