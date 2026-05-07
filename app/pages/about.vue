@@ -4,16 +4,16 @@
     <section class="pt-32 pb-24 bg-slate-900 text-white relative overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2000" 
+          src="/images/page_header.png" 
           class="w-full h-full object-cover opacity-20"
-          alt="Modern Office"
+          alt="Modern Institutional Office"
         />
-        <div class="absolute inset-0 bg-gradient-to-b from-blue-600/20 to-slate-900"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/20 to-slate-900"></div>
       </div>
       
       <div class="container mx-auto px-6 relative z-10 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">{{ t('nav.about') }}</h1>
-        <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full mb-8"></div>
+        <div class="h-1 w-20 bg-primary mx-auto rounded-full mb-8"></div>
         <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
           {{ t('about.description') }}
         </p>
@@ -32,7 +32,7 @@
 
       <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
         <div class="p-10 bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
-          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
+          <div class="w-14 h-14 bg-primary/10 dark:bg-primary/30 rounded-2xl flex items-center justify-center text-primary mb-6">
             <AwardIcon class="w-8 h-8" />
           </div>
           <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">{{ t('about.features.global') }}</h4>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="p-10 bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
-          <div class="w-14 h-14 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center text-indigo-600 mb-6">
+          <div class="w-14 h-14 bg-secondary/10 dark:bg-secondary/30 rounded-2xl flex items-center justify-center text-secondary mb-6">
             <UsersIcon class="w-8 h-8" />
           </div>
           <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4">{{ t('about.features.experts') }}</h4>

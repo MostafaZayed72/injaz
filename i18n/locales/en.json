@@ -64,24 +64,39 @@
     "viewAll": "View All Categories",
     "explore": "Explore Courses",
     "categories": {
-      "management": "Management",
-      "hr": "Human Resources",
-      "finance": "Finance & Audit",
-      "safety": "Health & Safety",
-      "engineering": "Engineering",
-      "it": "Information Tech",
-      "comm": "Communications",
-      "innovation": "Innovation"
+      "management": "Management and Leadership",
+      "worklife": "Work - Life Balance",
+      "business": "Business Courses",
+      "media": "Media Consultancy",
+      "hr": "Human Resource",
+      "finance": "Finance",
+      "it": "Computer Courses",
+      "customer": "Customer Service",
+      "languages": "Languages"
     },
     "descriptions": {
       "management": "Developing strategic leadership and operational management skills.",
-      "hr": "Strategies for talent acquisition, development, and retention.",
-      "finance": "Financial planning, reporting, and internal auditing.",
-      "safety": "Occupational health, safety, and environmental standards.",
-      "engineering": "Technical skills for engineering and maintenance teams.",
+      "worklife": "Achieving the perfect balance between professional demands and personal life.",
+      "business": "Advanced courses in business administration and international trade.",
+      "media": "Specialized media consultancy and corporate reputation management.",
+      "hr": "Strategies for talent acquisition and human capital development.",
+      "finance": "Financial management, auditing, and accounting for non-financials.",
       "it": "Modern IT certifications and software proficiency.",
-      "comm": "Public relations, media, and corporate communication.",
-      "innovation": "Design thinking and creative problem-solving methods."
+      "customer": "Excellence in customer service and the art of public dealing.",
+      "languages": "Language skill development programs for business and international communication."
+    },
+    "management": {
+      "leadingTeams": {
+        "title": "Leading High Performance Teams",
+        "description": "Teams often depend on how well the team operates. How are their problem-solving skills? Do they work well together? There have been hundreds of human beings function better and learn better in groups. If participants want to unleash the talent of their individual team members, this workshop is a leadership practices that work.",
+        "objectives": [
+          "Identify and tapping into the twelve characteristics of an effective team",
+          "Promote trust and rapport by exploring their team player style and how it impacts group dynamics",
+          "Recognize the key elements that move a team from involvement to empowerment and how to give these elements to their team",
+          "Develop strategies for dealing with team conflict and common situations",
+          "Understand how action planning and analysis tools can help their team perform better"
+        ]
+      }
     }
   },
   "cta": {

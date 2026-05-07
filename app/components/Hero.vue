@@ -3,11 +3,11 @@
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
       <img 
-        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000" 
-        class="w-full h-full object-cover opacity-40"
+        src="/images/hero_official.png" 
+        class="w-full h-full object-cover opacity-50"
         alt="Hero Background"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/50 to-slate-950"></div>
     </div>
 
     <!-- Animated Shapes -->
@@ -23,7 +23,7 @@
           class="text-5xl md:text-7xl font-extrabold text-white leading-[1.15] mb-6"
         >
           {{ t('hero.title') }} <br />
-          <span class="inline-block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+          <span class="inline-block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-primary-light drop-shadow-sm">
             {{ t('hero.titleAccent') }}
           </span>
         </h1>
@@ -44,8 +44,8 @@
           class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
         >
           <NuxtLink 
-            :to="localePath('/#programs')"
-            class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-blue-500/25 flex items-center justify-center gap-2 group"
+            :to="localePath('/programs')"
+            class="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-primary-dark text-white rounded-2xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-primary/25 flex items-center justify-center gap-2 group"
           >
             {{ t('hero.ctaPrimary') }}
           </NuxtLink>

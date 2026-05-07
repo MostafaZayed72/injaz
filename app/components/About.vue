@@ -9,17 +9,17 @@
         >
           <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1000" 
-              alt="Professional Business Meeting"
+              src="/images/about_official.png" 
+              alt="Professional Institutional Meeting"
               class="w-full h-auto"
             />
           </div>
           <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl z-0"></div>
           
           <!-- Experience Badge -->
-          <div class="absolute bottom-10 left-10 z-20 glass p-6 rounded-2xl shadow-xl">
-            <div class="text-4xl font-extrabold text-blue-600 mb-1">15+</div>
-            <div class="text-sm font-semibold text-slate-600 dark:text-slate-300">
+          <div class="absolute bottom-10 left-10 z-20 bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-2xl border-l-4 border-primary">
+            <div class="text-4xl font-extrabold text-primary mb-1">15+</div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white">
               {{ t('about.yearsExp') }}
             </div>
           </div>
@@ -30,7 +30,7 @@
           v-motion-slide-visible-right
           class="lg:w-1/2"
         >
-          <h2 class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-3">{{ t('about.subtitle') }}</h2>
+          <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-3">{{ t('about.subtitle') }}</h2>
           <h3 class="text-4xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
             {{ t('about.title') }} <span class="text-gradient">{{ t('about.titleAccent') }}</span>
           </h3>
@@ -41,7 +41,7 @@
           <div class="space-y-8">
             <div>
               <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center">
-                <div class="w-2 h-8 bg-blue-600 mr-3 rtl:mr-0 rtl:ml-3 rounded-full"></div>
+                <div class="w-2 h-8 bg-primary mr-3 rtl:mr-0 rtl:ml-3 rounded-full"></div>
                 {{ t('about.approachTitle') }}
               </h4>
               <p class="text-slate-500 dark:text-slate-400 mb-6">
@@ -49,7 +49,7 @@
               </p>
               <div class="grid grid-cols-2 gap-4">
                 <div v-for="(val, key) in approachItems" :key="key" class="flex items-center p-4 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
-                  <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 mr-3 rtl:mr-0 rtl:ml-3">
+                  <div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary mr-3 rtl:mr-0 rtl:ml-3">
                     <CheckIcon class="w-4 h-4" />
                   </div>
                   <span class="font-bold text-slate-700 dark:text-slate-300 text-sm">{{ t(`about.approachItems.${key}`) }}</span>
@@ -101,8 +101,8 @@ const approachItems = {
 }
 
 const coreValues = [
-  { key: 'vision', icon: CompassIcon, bg: 'bg-blue-600' },
-  { key: 'mission', icon: TargetIcon, bg: 'bg-indigo-600' },
-  { key: 'goal', icon: FlagIcon, bg: 'bg-emerald-600' }
+  { key: 'vision', icon: CompassIcon, bg: 'bg-primary' },
+  { key: 'mission', icon: TargetIcon, bg: 'bg-secondary' },
+  { key: 'goal', icon: FlagIcon, bg: 'bg-primary-light' }
 ]
 </script>

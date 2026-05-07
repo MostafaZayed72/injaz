@@ -6,7 +6,7 @@
     <div class="container mx-auto px-6 flex items-center justify-between">
       <!-- Logo Container -->
       <NuxtLink :to="localePath('/')" class="relative group">
-        <div class="relative px-4 py-2 bg-white backdrop-blur-md rounded-xl border-2 border-blue-500/20 shadow-lg shadow-blue-500/5">
+        <div class="relative px-4 py-2 bg-white backdrop-blur-md rounded-xl border-2 border-primary/20 shadow-lg shadow-primary/5">
           <img src="/logo.png" alt="Injaz CTC Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105" />
         </div>
       </NuxtLink>
@@ -17,10 +17,11 @@
           v-for="link in navLinks" 
           :key="link.key"
           :to="localePath(link.href)"
-          class="text-sm font-bold transition-colors hover:text-blue-500"
+          class="text-sm font-bold transition-colors"
           :class="[
+            scrolled ? 'hover:text-primary' : 'hover:text-primary-light',
             route.fullPath === localePath(link.href) || (link.href === '/' && route.path === localePath('/'))
-              ? '!text-blue-500' 
+              ? (scrolled ? 'text-primary' : 'text-primary-light')
               : (scrolled ? 'text-slate-700 dark:text-slate-200' : 'text-white')
           ]"
         >
@@ -43,7 +44,7 @@
           <button 
             @click="toggleColorMode"
             class="p-2 rounded-full transition-colors"
-            :class="[scrolled ? 'hover:bg-slate-100 dark:hover:bg-slate-800 text-blue-500' : 'text-white hover:bg-white/10']"
+            :class="[scrolled ? 'hover:bg-slate-100 dark:hover:bg-slate-800 text-primary' : 'text-white hover:bg-white/10']"
           >
             <SunIcon v-if="colorMode.value === 'dark'" class="w-5 h-5" />
             <MoonIcon v-else class="w-5 h-5" />
@@ -52,8 +53,8 @@
         
         <NuxtLink 
           :to="localePath('/contact')"
-          exact-active-class="!bg-blue-700"
-          class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-blue-500/30"
+          exact-active-class="!bg-primary-dark"
+          class="hidden md:block bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/30"
         >
           {{ t('nav.getStarted') }}
         </NuxtLink>
@@ -99,7 +100,7 @@
             class="text-3xl font-bold transition-colors py-2 border-b border-slate-50 dark:border-slate-900"
             :class="[
               route.fullPath === localePath(link.href) || (link.href === '/' && route.path === localePath('/'))
-                ? 'text-blue-500' 
+                ? 'text-primary' 
                 : 'text-slate-900 dark:text-white'
             ]"
           >
@@ -119,7 +120,7 @@
               {{ colorMode.value === 'dark' ? 'Light' : 'Dark' }}
             </button>
           </div>
-          <NuxtLink to="/contact" @click="isMenuOpen = false" class="block w-full text-center bg-blue-600 text-white py-5 rounded-2xl font-bold text-xl shadow-xl shadow-blue-500/30">
+          <NuxtLink to="/contact" @click="isMenuOpen = false" class="block w-full text-center bg-primary text-white py-5 rounded-2xl font-bold text-xl shadow-xl shadow-primary/30">
             {{ t('nav.getStarted') }}
           </NuxtLink>
         </div>
@@ -141,7 +142,7 @@ const isMenuOpen = ref(false)
 const navLinks = [
   { name: 'Home', href: '/', key: 'home' },
   { name: 'About', href: '/about', key: 'about' },
-  { name: 'Programs', href: '/#programs', key: 'programs' },
+  { name: 'Programs', href: '/programs', key: 'programs' },
   { name: 'Services', href: '/#services', key: 'services' },
   { name: 'Contact', href: '/contact', key: 'contact' }
 ]

@@ -13,16 +13,16 @@
             {{ t('about.description') }}
           </p>
           <div class="flex space-x-4 rtl:space-x-reverse">
-            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
               <FacebookIcon class="w-5 h-5" />
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
               <TwitterIcon class="w-5 h-5" />
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
               <LinkedinIcon class="w-5 h-5" />
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
               <InstagramIcon class="w-5 h-5" />
             </a>
           </div>
@@ -32,10 +32,10 @@
         <div>
           <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">{{ t('footer.quickLinks') }}</h4>
           <ul class="space-y-4">
-            <li><NuxtLink :to="localePath('/about')" class="hover:text-blue-500 transition-colors">{{ t('nav.about') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('/#programs')" class="hover:text-blue-500 transition-colors">{{ t('nav.programs') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('/#services')" class="hover:text-blue-500 transition-colors">{{ t('nav.services') }}</NuxtLink></li>
-            <li><NuxtLink :to="localePath('/contact')" class="hover:text-blue-500 transition-colors">{{ t('nav.contact') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/about')" class="hover:text-primary transition-colors">{{ t('nav.about') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/#programs')" class="hover:text-primary transition-colors">{{ t('nav.programs') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/#services')" class="hover:text-primary transition-colors">{{ t('nav.services') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/contact')" class="hover:text-primary transition-colors">{{ t('nav.contact') }}</NuxtLink></li>
           </ul>
         </div>
 
@@ -43,9 +43,9 @@
         <div>
           <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">{{ t('footer.support') }}</h4>
           <ul class="space-y-4">
-            <li><a href="#" class="hover:text-blue-500 transition-colors">{{ t('footer.help') }}</a></li>
-            <li><a href="#" class="hover:text-blue-500 transition-colors">{{ t('footer.terms') }}</a></li>
-            <li><a href="#" class="hover:text-blue-500 transition-colors">{{ t('footer.privacy') }}</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">{{ t('footer.help') }}</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">{{ t('footer.terms') }}</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">{{ t('footer.privacy') }}</a></li>
           </ul>
         </div>
 
@@ -54,15 +54,15 @@
           <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">{{ t('footer.contact') }}</h4>
           <ul class="space-y-6">
             <li class="flex items-start">
-              <MapPinIcon class="w-5 h-5 text-blue-500 mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
+              <MapPinIcon class="w-5 h-5 text-primary mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
               <span class="text-sm">{{ t('footer.address') }}</span>
             </li>
             <li class="flex items-center">
-              <PhoneIcon class="w-5 h-5 text-blue-500 mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
+              <PhoneIcon class="w-5 h-5 text-primary mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
               <span class="text-sm" dir="ltr">+971 4 000 0000</span>
             </li>
             <li class="flex items-center">
-              <MailIcon class="w-5 h-5 text-blue-500 mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
+              <MailIcon class="w-5 h-5 text-primary mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
               <span class="text-sm">info@injazctc.com</span>
             </li>
           </ul>

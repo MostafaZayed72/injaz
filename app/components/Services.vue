@@ -4,7 +4,7 @@
       <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 
           v-motion-slide-visible-bottom
-          class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-3"
+          class="text-primary font-bold tracking-wider uppercase text-sm mb-3"
         >
           {{ t('services.subtitle') }}
         </h2>
@@ -53,12 +53,12 @@ const { t } = useI18n()
 const services = [
   {
     key: 'training',
-    bg: 'bg-blue-500 shadow-blue-200 dark:shadow-none',
+    bg: 'bg-primary shadow-primary/20 dark:shadow-none',
     icon: GraduationCapIcon
   },
   {
     key: 'it',
-    bg: 'bg-indigo-500 shadow-indigo-200 dark:shadow-none',
+    bg: 'bg-secondary shadow-secondary/20 dark:shadow-none',
     icon: CpuIcon
   },
   {
