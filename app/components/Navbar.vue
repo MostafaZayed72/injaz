@@ -34,7 +34,7 @@
         <!-- Language Switch -->
         <button 
           @click="setLocale(locale === 'ar' ? 'en' : 'ar')"
-          class="px-3 py-1.5 rounded-lg border text-xs font-bold transition-all"
+          class="hidden lg:block px-3 py-1.5 rounded-lg border text-xs font-bold transition-all"
           :class="[scrolled ? 'text-slate-900 border-slate-200 dark:text-white dark:border-slate-800' : 'text-white border-white/20 hover:bg-white/10']"
         >
           {{ locale === 'ar' ? 'EN' : 'العربية' }}
@@ -43,7 +43,7 @@
         <ClientOnly>
           <button 
             @click="toggleColorMode"
-            class="p-2 rounded-full transition-colors"
+            class="hidden lg:block p-2 rounded-full transition-colors"
             :class="[scrolled ? 'hover:bg-slate-100 dark:hover:bg-slate-800 text-primary' : 'text-white hover:bg-white/10']"
           >
             <SunIcon v-if="colorMode.value === 'dark'" class="w-5 h-5" />
@@ -51,13 +51,6 @@
           </button>
         </ClientOnly>
         
-        <NuxtLink 
-          :to="localePath('/contact')"
-          exact-active-class="!bg-primary-dark"
-          class="hidden md:block bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/30"
-        >
-          {{ t('nav.getStarted') }}
-        </NuxtLink>
 
         <!-- Mobile Menu Toggle -->
         <button 
@@ -117,12 +110,9 @@
             <button @click="toggleColorMode" class="flex items-center justify-center gap-3 p-4 rounded-2xl bg-slate-100 dark:bg-slate-800 font-bold text-slate-900 dark:text-white">
               <SunIcon v-if="colorMode.value === 'dark'" class="w-5 h-5 text-yellow-500" />
               <MoonIcon v-else class="w-5 h-5 text-indigo-500" />
-              {{ colorMode.value === 'dark' ? 'Light' : 'Dark' }}
+              {{ colorMode.value === 'dark' ? t('nav.light') : t('nav.dark') }}
             </button>
           </div>
-          <NuxtLink to="/contact" @click="isMenuOpen = false" class="block w-full text-center bg-primary text-white py-5 rounded-2xl font-bold text-xl shadow-xl shadow-primary/30">
-            {{ t('nav.getStarted') }}
-          </NuxtLink>
         </div>
       </div>
     </Transition>

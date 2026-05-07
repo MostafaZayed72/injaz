@@ -7,7 +7,9 @@
     "certification": "Certification",
     "associations": "Associations",
     "contact": "Contact Us",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "dark": "Dark",
+    "light": "Light"
   },
   "hero": {
     "title": "Start Today and Create",

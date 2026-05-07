@@ -7,7 +7,9 @@
     "certification": "الشهادات",
     "associations": "الجمعيات",
     "contact": "تواصل معنا",
-    "getStarted": "ابدأ الآن"
+    "getStarted": "ابدأ الآن",
+    "dark": "ليلي",
+    "light": "نهاري"
   },
   "hero": {
     "title": "ابدأ اليوم واصنع",
