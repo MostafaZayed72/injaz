@@ -9,7 +9,7 @@
         >
           <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="/images/corporate_meeting_men.png" 
+              src="/images/corporate_meeting_realistic.png" 
               alt="Professional Institutional Meeting"
               class="w-full h-auto"
             />
