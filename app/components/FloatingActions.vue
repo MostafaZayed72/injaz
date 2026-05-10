@@ -20,7 +20,7 @@
 
     <!-- WhatsApp Button -->
     <a 
-      href="https://wa.me/97140000000" 
+      href="https://wa.me/971507180464" 
       target="_blank"
       class="w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all animate-bounce-slow"
     >

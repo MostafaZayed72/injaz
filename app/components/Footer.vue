@@ -71,7 +71,6 @@
               <MailIcon class="w-5 h-5 text-primary mr-3 rtl:mr-0 rtl:ml-3 shrink-0" />
               <div class="flex flex-col gap-1">
                 <span class="text-sm">{{ t('footer.email') }}</span>
-                <span class="text-xs opacity-70">Skype: {{ t('footer.skype') }}</span>
               </div>
             </li>
           </ul>

@@ -44,7 +44,7 @@
                   </div>
                   <div>
                     <h4 class="font-bold text-slate-900 dark:text-white mb-1">{{ t('contact.phone') }}</h4>
-                    <p class="text-sm text-slate-500" dir="ltr">+971 4 385 1666</p>
+                    <p class="text-sm text-slate-500" dir="ltr">{{ t('footer.phone') }}</p>
                   </div>
                 </li>
                 <li class="flex items-start">
@@ -53,7 +53,7 @@
                   </div>
                   <div>
                     <h4 class="font-bold text-slate-900 dark:text-white mb-1">{{ t('contact.email') }}</h4>
-                    <p class="text-sm text-slate-500">info@injazctc.com</p>
+                    <p class="text-sm text-slate-500">{{ t('footer.email') }}</p>
                   </div>
                 </li>
               </ul>
