@@ -1,12 +1,12 @@
 <template>
   <footer id="contact" class="bg-slate-950 text-slate-400 py-20 border-t border-slate-900">
     <div class="container mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
         <!-- Brand -->
         <div class="col-span-1 lg:col-span-1">
           <div class="mb-8">
-            <div class="inline-block p-4 bg-white rounded-2xl shadow-lg border border-white/10">
-              <img src="/logo.png" alt="Injaz CTC Logo" class="h-16 w-auto" />
+            <div class="inline-block p-2 bg-white rounded-2xl shadow-lg border border-white/10">
+              <img src="/logo.png" alt="Injaz CTC Logo" class="h-20 w-auto" />
             </div>
           </div>
           <p class="text-sm leading-relaxed mb-8">
@@ -39,15 +39,7 @@
           </ul>
         </div>
 
-        <!-- Support -->
-        <div>
-          <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">{{ t('footer.support') }}</h4>
-          <ul class="space-y-4">
-            <li><a href="#" class="hover:text-primary transition-colors">{{ t('footer.help') }}</a></li>
-            <li><a href="#" class="hover:text-primary transition-colors">{{ t('footer.terms') }}</a></li>
-            <li><a href="#" class="hover:text-primary transition-colors">{{ t('footer.privacy') }}</a></li>
-          </ul>
-        </div>
+
 
         <!-- Contact -->
         <div>
