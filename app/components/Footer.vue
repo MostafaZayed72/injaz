@@ -12,6 +12,7 @@
           <p class="text-sm leading-relaxed mb-8">
             {{ t('about.description') }}
           </p>
+          <!-- Social Links Hidden Temporarily
           <div class="flex space-x-4 rtl:space-x-reverse">
             <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
               <FacebookIcon class="w-5 h-5" />
@@ -26,6 +27,7 @@
               <InstagramIcon class="w-5 h-5" />
             </a>
           </div>
+          -->
         </div>
 
         <!-- Links -->
